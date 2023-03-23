@@ -79,5 +79,13 @@ def checkDate(matchedObject):
 
 
 
-checkDate(mo)  
+while True:
+        
+    print('please input the date as in DD/MM/YYYY format: ')
+    searchdate = input()
+    mo = date.findall(searchdate)
+    checkDate(mo)
+    print('to exit type exit or else hit enter')
+    if(searchdate == ''):
+     break
 
